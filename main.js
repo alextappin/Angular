@@ -41,6 +41,6 @@ app.directive('enterbutton', function(){
 });
 
 app.controller('itemCtrl', function($scope){
-    $scope.items=[{text:"Alex"}];
+    $scope.items=[{text:""}];
     $scope.inputText = "";
 });
