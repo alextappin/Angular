@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My HTML File</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://code.angularjs.org/snapshot/angular.js"></script>
+    <script src="main.js"></script>
+</head>
+<body ng-app="todoApp" ng-controller="itemCtrl">
+<div class="container">
+    <!--directives located in main.js -->
+    <header></header>
+    <div class="text-center">
+    <h3><ul><li ng-repeat="item in items">{{item.text}}</li></ul></h3>
+    </div>
+    <inputbox></inputbox>
+    <enterbutton></enterbutton>
+</div>
+</body>
+</html>
+
+<style>
+    ul {
+        list-style-type: none;
+        padding:0; margin:0;
+    }
+</style>
