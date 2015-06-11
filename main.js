@@ -9,7 +9,7 @@ app.directive('item', function(){
             '<h3><ul><li>' +
             '<div class="text-center" style="padding-right: 15px">'+
             '<input type=checkbox style="float: left" class="glyphicon glyphicon-unchecked" ng-click="item.done = true; doneCountUp()">' +
-            '<span style="padding-left: 13px; word-break: break-all; word-wrap: break-word;">' +
+            '<span ng-style=item.colorText style="padding-left: 13px; word-break: break-all; word-wrap: break-word;">' +
             '{{item.text}}' +
             '</span>' +
             '<input type=checkbox style="float: right" class="hoverDelete glyphicon glyphicon-remove-sign" ng-click="items.splice($index,1); doneCountDown()">' +
@@ -136,11 +136,13 @@ app.directive('searchbar', function(){
 });
 
 app.controller('itemCtrl', function($scope){
-    $scope.items=[{text:"Example Item", done:false}];
+    $scope.items=[{text:"Example Item", done:false, colorText: {'color':'red'}, timeStamp: ""}];
     $scope.inputText = "";
     $scope.search;
     $scope.showSearch = true;
     $scope.collapse = true;
+    $scope.counter = 0;
+    $scope.color = {'color': 'red'};
 
     $scope.clickPlus = function(){
         $scope.collapse = false;
@@ -151,7 +153,6 @@ app.controller('itemCtrl', function($scope){
     $scope.getCollapse = function(){
         return $scope.collapse;
     };
-    $scope.counter = 0;
     $scope.doneCountUp = function(){
         $scope.counter += 1;
     };
@@ -170,5 +171,5 @@ app.controller('itemCtrl', function($scope){
     };
     $scope.getSearchModel = function() {
         return $scope.search;
-    }
+    };
 });
