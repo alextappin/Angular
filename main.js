@@ -42,7 +42,7 @@ app.directive('header', function(){
     return {
         restrict: 'E',
         template: '<br></bbr><div class="jumbotron text-center">' +
-            '<h1>What To Do</h1>' +
+            '<h1>To Do</h1>' +
             '</div>' +
             '<br>'
     }
@@ -128,7 +128,8 @@ app.controller('itemCtrl', function($scope){
         $scope.counter += 1;
     };
     $scope.doneCountDown = function(){
-        $scope.counter -= 1;
+        if($scope.counter > 0)
+            $scope.counter -= 1;
     };
 
 });
