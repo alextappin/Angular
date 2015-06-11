@@ -4,7 +4,7 @@ app.directive('item', function(){
     return {
         restrict: 'E',
         template: '<div class="text-center">' +
-        '<h3><li>{{items.toString()}}</li></h3>' +
+        '<h3><ul><li ng-repeat="item in items">{{item.text}}</li></ul></h3>' +
         '</div>'
     }
 });
@@ -29,7 +29,7 @@ app.directive('inputbox', function(){
     }
 });
 
-app.directive('enterbutton', function(){
+app.directive('enterbox', function(){
     return {
         restrict: 'E',
         template: '<div class="text-center">' +
@@ -40,7 +40,23 @@ app.directive('enterbutton', function(){
     }
 });
 
+app.directive('app', function(){
+    return {
+        restrict: 'E',
+        template: '<body>' +
+            '<div class="container">' +
+            '<header></header>' +
+            '<item></item>' +
+            '<form>' +
+            '<inputbox></inputbox>' +
+            '<enterbox></enterbox>' +
+            '</form>' +
+            '</div>' +
+            '</body>'
+    }
+});
+
 app.controller('itemCtrl', function($scope){
-    $scope.items=[{text:""}];
+    $scope.items=[{text:"", done:false}];
     $scope.inputText = "";
 });

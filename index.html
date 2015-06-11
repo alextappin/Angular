@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en"  ng-app="todoApp" ng-controller="itemCtrl">
 <head>
     <meta charset="utf-8">
     <title>My HTML File</title>
@@ -11,17 +11,9 @@
     <script src="http://code.angularjs.org/snapshot/angular.js"></script>
     <script src="main.js"></script>
 </head>
-<body ng-app="todoApp" ng-controller="itemCtrl">
-<div class="container">
     <!--directives located in main.js -->
-    <header></header>
-    <div class="text-center">
-    <h3><ul><li ng-repeat="item in items">{{item.text}}</li></ul></h3>
-    </div>
-    <inputbox></inputbox>
-    <enterbutton></enterbutton>
-</div>
-</body>
+    <app></app>
+    <!--directives located in main.js -->
 </html>
 
 <style>
