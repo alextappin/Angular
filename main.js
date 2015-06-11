@@ -4,14 +4,14 @@ app.directive('item', function(){
     return {
         restrict: 'E',
         template: '<div ng-repeat="item in items">' +
-            '<div ng-if="!item.done">' +
+            '<div ng-if="!item.done && item.text.length !=0">' +
             '<h3><ul><li>' +
             '<div class="text-center" style="padding-right: 15px">'+
-            '<input type=checkbox style="margin-top: 10px;float: left" class="glyphicon glyphicon-unchecked" ng-click="item.done = true">' +
+            '<input type=checkbox style="float: left" class="glyphicon glyphicon-unchecked" ng-click="item.done = true">' +
             '<span style="padding-left: 13px">' +
             '{{item.text}}' +
             '</span>' +
-            '<input type=checkbox style="margin-top: 10px;float: right" class="glyphicon glyphicon-remove-sign" ng-click="items.splice($index,1)">' +
+            '<input type=checkbox style="float: right" class="hoverDelete glyphicon glyphicon-remove-sign" ng-click="items.splice($index,1)">' +
             '</div>' +
             '</li></ul></h3>' +
             '</div>' +
@@ -23,14 +23,14 @@ app.directive("doneitem", function(){
     return {
         restrict: 'E',
         template: '<div ng-repeat="item in items">' +
-        '<div ng-if="item.done">' +
+        '<div ng-if="item.done && item.text.length !=0">' +
         '<h3><ul><li>' +
         '<div class="text-center" style="padding-right: 15px; text-decoration: line-through";>'+
-        '<input type=checkbox style="margin-top: 10px;float: left" class="glyphicon glyphicon-check" ng-click="item.done = false" ng-checked="true">' +
+        '<input type=checkbox style="float: left" class="glyphicon glyphicon-check" ng-click="item.done = false" ng-checked="true">' +
         '<span style="color: rgb(10,50,50); opacity: .5; padding-left: 13px">' +
         '{{item.text}}' +
         '</span>' +
-        '<input type=checkbox style="margin-top: 10px;float: right" class="glyphicon glyphicon-remove-sign" ng-click="items.splice($index,1)">' +
+        '<input type=checkbox style="float: right" class="hoverDelete glyphicon glyphicon-remove-sign" ng-click="items.splice($index,1)">' +
         '</div>' +
         '</li></ul></h3>' +
         '</div>' +
@@ -41,8 +41,8 @@ app.directive("doneitem", function(){
 app.directive('header', function(){
     return {
         restrict: 'E',
-        template: '<div class="jumbotron text-center">' +
-            '<h1>To-Do List</h1>' +
+        template: '<br></bbr><div class="jumbotron text-center">' +
+            '<h1>What To Do</h1>' +
             '</div>' +
             '<br>'
     }
@@ -69,6 +69,15 @@ app.directive('enterbox', function(){
     }
 });
 
+app.directive('welcomemessage', function(){
+    return {
+        restrict: 'E',
+        template: '<div ng-if="inputText.length == 0 && items.length == 0">' +
+        '<h2 style="text-align: center; color: rgba(200,0,5,.5)">Please Do Something</h2>' +
+        '</div>'
+    }
+});
+
 app.directive('app', function(){
     return {
         restrict: 'E',
@@ -80,11 +89,13 @@ app.directive('app', function(){
             '<form>' +
             '<inputbox></inputbox>' +
             '<enterbox></enterbox>' +
+            '<welcomemessage></welcomemessage>' +
             '</form>' +
             '</div>' +
             '</body>'
     }
 });
+
 
 app.controller('itemCtrl', function($scope){
     $scope.items=[{text:"Example Item", done:false}];
