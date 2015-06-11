@@ -7,11 +7,11 @@ app.directive('item', function(){
             '<div ng-if="!item.done && item.text.length !=0">' +
             '<h3><ul><li>' +
             '<div class="text-center" style="padding-right: 15px">'+
-            '<input type=checkbox style="float: left" class="glyphicon glyphicon-unchecked" ng-click="item.done = true">' +
+            '<input type=checkbox style="float: left" class="glyphicon glyphicon-unchecked" ng-click="item.done = true; doneCountUp()">' +
             '<span style="padding-left: 13px">' +
             '{{item.text}}' +
             '</span>' +
-            '<input type=checkbox style="float: right" class="hoverDelete glyphicon glyphicon-remove-sign" ng-click="items.splice($index,1)">' +
+            '<input type=checkbox style="float: right" class="hoverDelete glyphicon glyphicon-remove-sign" ng-click="items.splice($index,1); doneCountDown()">' +
             '</div>' +
             '</li></ul></h3>' +
             '</div>' +
@@ -22,19 +22,19 @@ app.directive('item', function(){
 app.directive("doneitem", function(){
     return {
         restrict: 'E',
-        template: '<div ng-repeat="item in items">' +
-        '<div ng-if="item.done && item.text.length !=0">' +
-        '<h3><ul><li>' +
-        '<div class="text-center" style="padding-right: 15px; text-decoration: line-through";>'+
-        '<input type=checkbox style="float: left" class="glyphicon glyphicon-check" ng-click="item.done = false" ng-checked="true">' +
-        '<span style="color: rgb(10,50,50); opacity: .5; padding-left: 13px">' +
-        '{{item.text}}' +
-        '</span>' +
-        '<input type=checkbox style="float: right" class="hoverDelete glyphicon glyphicon-remove-sign" ng-click="items.splice($index,1)">' +
-        '</div>' +
-        '</li></ul></h3>' +
-        '</div>' +
-        '</div>'
+        template: '<div ng-repeat="item in items" ng-if="collapse==false">' +
+            '<div ng-if="item.done && item.text.length !=0">' +
+            '<h3><ul><li>' +
+            '<div class="text-center" style="padding-right: 15px; text-decoration: line-through";>'+
+            '<input type=checkbox style="float: left" class="glyphicon glyphicon-check" ng-click="item.done = false; doneCountDown()" ng-checked="true">' +
+            '<span style="color: rgb(10,50,50); opacity: .5; padding-left: 13px">' +
+            '{{item.text}}' +
+            '</span>' +
+            '<input type=checkbox style="float: right" class="hoverDelete glyphicon glyphicon-remove-sign" ng-click="items.splice($index,1); doneCountDown()">' +
+            '</div>' +
+            '</li></ul></h3>' +
+            '</div>' +
+            '</div>'
     }
 });
 
@@ -85,6 +85,7 @@ app.directive('app', function(){
             '<div class="container">' +
             '<header></header>' +
             '<item></item>' +
+            '<collapse></collapse>' +
             '<doneitem></doneitem>' +
             '<form>' +
             '<inputbox></inputbox>' +
@@ -96,8 +97,38 @@ app.directive('app', function(){
     }
 });
 
+app.directive('collapse', function(){
+   return {
+       restrict: 'E',
+       template:
+           '<div ng-if="counter > 0">' +
+           '<input type=checkbox ng-hide="!getCollapse()" style="margin-left: -20px; margin-top: 20px; text-align: left" class="glyphicon glyphicon-plus" ng-click="clickPlus()" ng-checked="false">' +
+           '<input type=checkbox ng-hide="getCollapse()" style="margin-left: -20px; margin-top: 20px; text-align: left" class="glyphicon glyphicon-minus" ng-click="clickMinus()" ng-checked="true">' +
+           '<span style="padding-left: 5px; font-size: 1.1em; color: rgb(10,50,50); opacity: .8" ng-if="!getCollapse()">Hide</span>' +
+           '<span style="padding-left: 5px; font-size: 1.1em; color: rgb(10,50,50); opacity: .8" ng-if="getCollapse()">Show</span>' +
+           '</div>'
+   }
+});
 
 app.controller('itemCtrl', function($scope){
     $scope.items=[{text:"Example Item", done:false}];
     $scope.inputText = "";
+    $scope.collapse = true;
+    $scope.clickPlus = function(){
+      $scope.collapse = false;
+    };
+    $scope.clickMinus = function(){
+        $scope.collapse = true;
+    };
+    $scope.getCollapse = function(){
+        return $scope.collapse;
+    };
+    $scope.counter = 0;
+    $scope.doneCountUp = function(){
+        $scope.counter += 1;
+    };
+    $scope.doneCountDown = function(){
+        $scope.counter -= 1;
+    };
+
 });
