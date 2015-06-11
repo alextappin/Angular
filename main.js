@@ -8,7 +8,7 @@ app.directive('item', function(){
             '<h3><ul><li>' +
             '<div class="text-center" style="padding-right: 15px">'+
             '<input type=checkbox style="float: left" class="glyphicon glyphicon-unchecked" ng-click="item.done = true; doneCountUp()">' +
-            '<span style="padding-left: 13px">' +
+            '<span style="padding-left: 13px; word-break: break-all; word-wrap: break-word;">' +
             '{{item.text}}' +
             '</span>' +
             '<input type=checkbox style="float: right" class="hoverDelete glyphicon glyphicon-remove-sign" ng-click="items.splice($index,1); doneCountDown()">' +
@@ -27,7 +27,7 @@ app.directive("doneitem", function(){
             '<h3><ul><li>' +
             '<div class="text-center" style="padding-right: 15px; text-decoration: line-through";>'+
             '<input type=checkbox style="float: left" class="glyphicon glyphicon-check" ng-click="item.done = false; doneCountDown()" ng-checked="true">' +
-            '<span style="color: rgb(10,50,50); opacity: .5; padding-left: 13px">' +
+            '<span style="color: rgb(10,50,50); opacity: .5; padding-left: 13px; word-break: break-all; word-wrap: break-word;">' +
             '{{item.text}}' +
             '</span>' +
             '<input type=checkbox style="float: right" class="hoverDelete glyphicon glyphicon-remove-sign" ng-click="items.splice($index,1); doneCountDown()">' +
@@ -41,7 +41,7 @@ app.directive("doneitem", function(){
 app.directive('header', function(){
     return {
         restrict: 'E',
-        template: '<br></bbr><div class="jumbotron text-center">' +
+        template: '<br></bbr><div class="jumbotron text-center" style="opacity:.9">' +
             '<h1>To Do</h1>' +
             '</div>' +
             '<br>'
