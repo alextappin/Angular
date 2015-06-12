@@ -9,11 +9,12 @@ app.directive('item', function(){
             '<h3><ul><li>' +
             '<div class="text-center" style="padding-right: 15px">'+
             '<input type=checkbox style="float: left" class="glyphicon glyphicon-unchecked" ng-click="item.done = true; doneCountUp()">' +
-            '<span ng-style=item.colorText style="padding-left: 47px; word-break: break-all; word-wrap: break-word;">' +
+            '<span ng-style="item.colorText" style="padding-left: 47px; word-break: break-all; word-wrap: break-word;">' +
             '{{item.text}}' +
             '</span>' +
+            '<colorbar></colorbar>' +
             '<input type=checkbox style="float: right" class="hoverDelete glyphicon glyphicon-remove-sign" ng-click="items.splice($index,1); doneCountDown()">' +
-            '<input type=checkbox style="float: right; margin-right: 20px" class="hoverDelete glyphicon glyphicon-pencil" ng-click="">' +
+            '<input type=checkbox style="float: right; margin-right: 20px" class="hoverDelete glyphicon glyphicon-edit" ng-click="clickEdit(item)">' +
             '</div>' +
             '</li></ul></h3>' +
             '</div>' +
@@ -30,11 +31,13 @@ app.directive("doneitem", function(){
             '<h3><ul><li>' +
             '<div class="text-center" style="padding-right: 15px; text-decoration: line-through";>'+
             '<input type=checkbox style="float: left" class="glyphicon glyphicon-check" ng-click="item.done = false; doneCountDown()" ng-checked="true">' +
-            '<span style="color: rgb(10,50,50); opacity: .5; padding-left: 47px; word-break: break-all; word-wrap: break-word;">' +
+            '<span ng-style="item.colorText" style="color: rgb(10,50,50); opacity: .5; padding-left: 47px; word-break: break-all; word-wrap: break-word;">' +
             '{{item.text}}' +
             '</span>' +
+            '<colorbar></colorbar>' +
             '<input type=checkbox style="float: right" class="hoverDelete glyphicon glyphicon-remove-sign" ng-click="items.splice($index,1); doneCountDown()">' +
-            '<input type=checkbox style="float: right; margin-right: 20px" class="hoverDelete glyphicon glyphicon-pencil" ng-click="">' +
+            '<input type=checkbox style="float: right; margin-right: 20px" class="hoverDelete glyphicon glyphicon-edit" ng-click="clickEdit(item)"> ' +
+
             '</div>' +
             '</li></ul></h3>' +
             '</div>' +
@@ -70,7 +73,7 @@ app.directive('enterbox', function(){
         restrict: 'E',
         template:
             '<div class="text-center">' +
-            '<button class="btn btn-info btn-block" style="text-align:center" ng-click="items.push({text:inputText, done:false}); inputText=\'\';"> ' +
+            '<button class="btn btn-info btn-block" style="text-align:center" ng-click="items.push({text:inputText, done:false, colorText:{color:\'green\'}}); inputText=\'\';"> ' +
             '<h3>Add Item</h3>' +
             '</button>' +
             '</div>'
@@ -137,14 +140,30 @@ app.directive('searchbar', function(){
    }
 });
 
+app.directive('colorbar', function(){
+    return {
+        restrict: 'E',
+        template:
+            '<span style="font-size: .9em" ng-if="item.edit">' +
+            '<input type=checkbox style="float: right; margin-right: -30px; margin-top: 3px; color: red" class="glyphicon glyphicon-tint" ng-click="changeColor($index, \'red\')">' +
+            '<input type=checkbox style="float: right; margin-right: -50px; margin-top: 3px; color: blue" class="glyphicon glyphicon-tint" ng-click="changeColor($index, \'blue\')">' +
+            '<input type=checkbox style="float: right; margin-right: -70px; margin-top: 3px; color: green" class="glyphicon glyphicon-tint" ng-click="changeColor($index, \'green\')">' +
+            '<input type=checkbox style="float: right; margin-right: -90px; margin-top: 3px; color: yellow" class="glyphicon glyphicon-tint" ng-click="changeColor($index, \'yellow\')">' +
+            '<input type=checkbox style="float: right; margin-right: -110px; margin-top: 3px; color: black" class="glyphicon glyphicon-tint" ng-click="changeColor($index, \'black\')">' +
+            '</span>'
+    }
+});
+
 app.controller('itemCtrl', function($scope){
-    $scope.items=[{text:"Example Item", done:false, colorText: {'color':'red'}, timeStamp: ""}];
+    $scope.items=[{text:"Example Item", done:false, colorText: {'color':'red'}, timeStamp: "", edit:false}];
     $scope.inputText = "";
     $scope.search;
     $scope.showSearch = true;
     $scope.collapse = true;
     $scope.counter = 0;
-    $scope.color = {'color': 'red'};
+    $scope.color = {'color': 'blue'};
+    $scope.edit = false;
+
 
     $scope.clickPlus = function(){
         $scope.collapse = false;
@@ -174,4 +193,10 @@ app.controller('itemCtrl', function($scope){
     $scope.getSearchModel = function() {
         return $scope.search;
     };
+    $scope.clickEdit = function(itemText){
+        itemText.edit = !itemText.edit;
+    };
+    $scope.changeColor = function(index, textColor){
+        $scope.items[index].colorText.color = textColor.toString();
+    }
 });
