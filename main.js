@@ -4,7 +4,7 @@ app.directive('item', function(){
     return {
         restrict: 'E',
         template:
-            '<div ng-repeat="item in items | filter:search">' +
+            '<div ng-repeat="item in items | filter:search | filter:filterOptions">' +
             '<div ng-if="!item.done && item.text.length !=0">' +
             '<h3><ul><li>' +
             '<div class="text-center" style="padding-right: 15px">'+
@@ -13,8 +13,8 @@ app.directive('item', function(){
             '{{item.text}}' +
             '</span>' +
             '<colorbar></colorbar>' +
-            '<input type=checkbox style="float: right" class="hoverDelete glyphicon glyphicon-remove-sign" ng-click="items.splice($index,1); doneCountDown()">' +
-            '<input type=checkbox style="float: right; margin-right: 20px" class="hoverDelete glyphicon glyphicon-edit" ng-click="clickEdit(item)">' +
+            '<input type=checkbox style="float: right" class="hoverDelete glyphicon glyphicon-remove-circle" ng-click="items.splice($index,1); doneCountDown()">' +
+            '<input type=checkbox style="float: right; margin-right: 20px" class="hoverDelete glyphicon glyphicon-cog" ng-click="clickEdit(item)">' +
             '</div>' +
             '</li></ul></h3>' +
             '</div>' +
@@ -26,7 +26,7 @@ app.directive("doneitem", function(){
     return {
         restrict: 'E',
         template:
-            '<div ng-repeat="item in items | filter:search" ng-if="collapse==false">' +
+            '<div ng-repeat="item in items | filter:search | orderBy:filterOptions" ng-if="collapse==false">' +
             '<div ng-if="item.done && item.text.length !=0">' +
             '<h3><ul><li>' +
             '<div class="text-center" style="padding-right: 15px; text-decoration: line-through";>'+
@@ -35,8 +35,8 @@ app.directive("doneitem", function(){
             '{{item.text}}' +
             '</span>' +
             '<colorbar></colorbar>' +
-            '<input type=checkbox style="float: right" class="hoverDelete glyphicon glyphicon-remove-sign" ng-click="items.splice($index,1); doneCountDown()">' +
-            '<input type=checkbox style="float: right; margin-right: 20px" class="hoverDelete glyphicon glyphicon-edit" ng-click="clickEdit(item)"> ' +
+            '<input type=checkbox style="float: right" class="hoverDelete glyphicon glyphicon-remove-circle" ng-click="items.splice($index,1); doneCountDown()">' +
+            '<input type=checkbox style="float: right; margin-right: 20px" class="hoverDelete glyphicon glyphicon-cog" ng-click="clickEdit(item)"> ' +
 
             '</div>' +
             '</li></ul></h3>' +
@@ -73,7 +73,7 @@ app.directive('enterbox', function(){
         restrict: 'E',
         template:
             '<div class="text-center">' +
-            '<button class="btn btn-info btn-block" style="text-align:center" ng-click="items.push({text:inputText, done:false, colorText:{color:\'green\'}}); inputText=\'\';"> ' +
+            '<button class="btn btn-info btn-block" style="text-align:center" ng-click="items.push({text:inputText, done:false, colorText:{color:\'black\'}}); inputText=\'\';"> ' +
             '<h3>Add Item</h3>' +
             '</button>' +
             '</div>'
@@ -129,13 +129,13 @@ app.directive('searchbar', function(){
        restrict: 'E',
        template:
            '<div ng-if="getSearch()"> <br>' +
-           '<input type=checkbox ng-hide="!getSearch()" style="margin-left: -20px; margin-top: 20px; text-align: left" class="glyphicon glyphicon-minus" ng-click="clickHide()" ng-checked="false">' +
-           '<span style="padding-left: 5px; font-size: 1.1em; color: rgb(10,50,50); opacity: .8">Hide</span><br><br>' +
+           '<input type=checkbox ng-hide="!getSearch()" style="margin-left: -20px; margin-top: 20px; text-align: left" class="glyphicon glyphicon-minus" ng-click="clickHide()" ng-checked="false"> ' +
+           '<span style="padding-left: 5px; font-size: 1.1em; color: rgb(10,50,50); opacity: .8">Hide</span><filtermenu></filtermenu><br><br>' +
            '<input type="text" class="form-control text-center input-lg" style="width: 30%;" placeholder="Search" ng-model="$parent.search">' +
            '</div>' +
            '<div ng-if="!getSearch()"> <br>' +
-           '<input type=checkbox ng-hide="getSearch()" style="margin-left: -20px; margin-top: 20px; text-align: left" class="glyphicon glyphicon-plus" ng-click="clickShow()" ng-checked="true">' +
-           '<span style="padding-left: 5px; font-size: 1.1em; color: rgb(10,50,50); opacity: .8">Search</span>' +
+           '<input type=checkbox ng-hide="getSearch()" style="margin-left: -20px; margin-top: 20px; text-align: left" class="glyphicon glyphicon-search" ng-click="clickShow()" ng-checked="true">' +
+           '<span style="padding-left: 5px; font-size: 1.1em; color: rgb(10,50,50); opacity: .8">Search</span><filtermenu></filtermenu>' +
            '</div>'
    }
 });
@@ -154,6 +154,31 @@ app.directive('colorbar', function(){
     }
 });
 
+app.directive('filtermenu', function(){
+    return {
+        restrict: 'E',
+        template:
+            '<span ng-if="!getFilter()">' +
+            '<input type=checkbox style="margin-left: 33%;" class="glyphicon glyphicon-filter" ng-click="clickFilter()">' +
+            '<span style="padding-left: 5px; font-size: 1.1em; color: rgb(10,50,50); opacity: .8">Filter</span>' +
+            '</span>' +
+            '<span ng-if="getFilter()">' +
+            '<input type=checkbox style="margin-left: 33%;" class="glyphicon glyphicon-minus" ng-click="clickFilter()">' +
+            '<span style="padding-left: 5px; font-size: 1.1em; color: rgb(10,50,50); opacity: .8">Hide</span>' +
+            '<input type=checkbox style="top: 25px; font-size: 1.5em; margin-left: 2%;" class="glyphicon glyphicon-sort-by-alphabet" ng-click="">' +
+            '<input type=checkbox style="top: 25px; font-size: 1.5em; margin-left: 2%;" class="glyphicon glyphicon-sort-by-alphabet-alt" ng-click="">' +
+            '<input type=checkbox style="top: 25px; font-size: 1.5em; margin-left: 2%;" class="glyphicon glyphicon glyphicon-time" ng-click="">' +
+            '<input type=checkbox style="top: 25px; font-size: 1.5em; margin-left: 2%;" class="glyphicon glyphicon-sort-by-attributes" ng-click="">' +
+            '<input type=checkbox style="top: 25px; font-size: 1.5em; margin-left: 2%;" class= "glyphicon glyphicon-sort-by-attributes-alt" ng-click="">' +
+            '<input type=checkbox style="top: 25px; font-size: 1.5em; margin-left: 1.5%; color: red" class="glyphicon glyphicon-tint" ng-click="">' +
+            '<input type=checkbox style="top: 25px; font-size: 1.5em; margin-left: 1.5%; color: blue" class="glyphicon glyphicon-tint" ng-click="">' +
+            '<input type=checkbox style="top: 25px; font-size: 1.5em; margin-left: 1.5%; color: green" class="glyphicon glyphicon-tint" ng-click="">' +
+            '<input type=checkbox style="top: 25px; font-size: 1.5em; margin-left: 1.5%; color: yellow" class="glyphicon glyphicon-tint" ng-click="">' +
+            '<input type=checkbox style="top: 25px; font-size: 1.5em; margin-left: 1.5%; color: black" class="glyphicon glyphicon-tint" ng-click="">' +
+            '</span>'
+    }
+});
+
 app.controller('itemCtrl', function($scope){
     $scope.items=[{text:"Example Item", done:false, colorText: {'color':'red'}, timeStamp: "", edit:false}];
     $scope.inputText = "";
@@ -163,7 +188,7 @@ app.controller('itemCtrl', function($scope){
     $scope.counter = 0;
     $scope.color = {'color': 'blue'};
     $scope.edit = false;
-
+    $scope.filter = false;
 
     $scope.clickPlus = function(){
         $scope.collapse = false;
@@ -198,5 +223,11 @@ app.controller('itemCtrl', function($scope){
     };
     $scope.changeColor = function(index, textColor){
         $scope.items[index].colorText.color = textColor.toString();
-    }
+    };
+    $scope.getFilter = function(){
+        return $scope.filter;
+    };
+    $scope.clickFilter = function(){
+        $scope.filter = !$scope.filter;
+    };
 });
