@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en"  ng-app="todoApp" ng-controller="itemCtrl">
+<head>
+    <meta charset="utf-8">
+    <title>My HTML File</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/ng-sortable/dist/ng-sortable.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="node_modules/ng-sortable/dist/ng-sortable.style.min.css">-->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="http://code.angularjs.org/snapshot/angular.js"></script>
+    <script type="text/javascript" src="node_modules/ng-sortable/dist/ng-sortable.js"></script>
+    <!-- Latest compiled JavaScript -->
+
+    <script src="main.js"></script>
+</head>
+    <!--directives located in main.js -->
+    <app></app>
+    <br>
+    <br>
+    <!--directives located in main.js -->
+</html>
+
+<style>
+    body {
+        background-image: url("hill2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    ul {
+        list-style-type: none;
+        padding:0; margin:0;
+    }
+    .glyphicon:before {
+        visibility: visible;
+        padding:0; margin:0;
+    }
+    .glyphicon:hover{
+        visibility: visible;
+        text-shadow: 0px 0px .1px rgba(10,50,50,.9);
+    }
+    input[type=checkbox].glyphicon{
+        visibility: hidden;
+        padding:0; margin:0;
+    }
+
+    .itemShow {
+        font-size: 1.8em;
+    }
+
+</style>
