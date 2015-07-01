@@ -2,270 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="288a7027-3d01-4371-b640-70763ece6acb" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\my_static_file_server.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\ng-sortable.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\ng-sortable.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\History.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\lib\application.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\lib\express.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\lib\middleware\init.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\lib\middleware\query.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\lib\request.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\lib\response.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\lib\router\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\lib\router\layer.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\lib\router\route.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\lib\utils.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\lib\view.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\accepts\HISTORY.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\accepts\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\accepts\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\accepts\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\accepts\node_modules\mime-types\HISTORY.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\accepts\node_modules\mime-types\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\accepts\node_modules\mime-types\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\accepts\node_modules\mime-types\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\accepts\node_modules\mime-types\node_modules\mime-db\HISTORY.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\accepts\node_modules\mime-types\node_modules\mime-db\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\accepts\node_modules\mime-types\node_modules\mime-db\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\accepts\node_modules\mime-types\node_modules\mime-db\db.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\accepts\node_modules\mime-types\node_modules\mime-db\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\accepts\node_modules\mime-types\node_modules\mime-db\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\accepts\node_modules\mime-types\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\accepts\node_modules\negotiator\HISTORY.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\accepts\node_modules\negotiator\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\accepts\node_modules\negotiator\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\accepts\node_modules\negotiator\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\accepts\node_modules\negotiator\lib\charset.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\accepts\node_modules\negotiator\lib\encoding.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\accepts\node_modules\negotiator\lib\language.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\accepts\node_modules\negotiator\lib\mediaType.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\accepts\node_modules\negotiator\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\accepts\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\array-flatten\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\array-flatten\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\array-flatten\array-flatten.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\array-flatten\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\content-disposition\HISTORY.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\content-disposition\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\content-disposition\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\content-disposition\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\content-disposition\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\content-type\HISTORY.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\content-type\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\content-type\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\content-type\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\content-type\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\cookie-signature\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\cookie-signature\History.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\cookie-signature\Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\cookie-signature\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\cookie-signature\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\cookie\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\cookie\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\cookie\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\cookie\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\debug\.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\debug\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\debug\History.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\debug\Makefile" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\debug\Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\debug\bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\debug\browser.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\debug\component.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\debug\debug.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\debug\node.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\debug\node_modules\ms\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\debug\node_modules\ms\History.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\debug\node_modules\ms\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\debug\node_modules\ms\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\debug\node_modules\ms\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\debug\node_modules\ms\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\debug\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\depd\History.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\depd\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\depd\Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\depd\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\depd\lib\compat\buffer-concat.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\depd\lib\compat\callsite-tostring.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\depd\lib\compat\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\depd\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\escape-html\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\escape-html\Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\escape-html\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\escape-html\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\etag\HISTORY.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\etag\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\etag\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\etag\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\etag\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\finalhandler\HISTORY.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\finalhandler\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\finalhandler\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\finalhandler\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\finalhandler\node_modules\unpipe\HISTORY.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\finalhandler\node_modules\unpipe\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\finalhandler\node_modules\unpipe\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\finalhandler\node_modules\unpipe\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\finalhandler\node_modules\unpipe\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\finalhandler\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\fresh\HISTORY.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\fresh\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\fresh\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\fresh\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\fresh\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\merge-descriptors\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\merge-descriptors\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\merge-descriptors\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\merge-descriptors\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\methods\HISTORY.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\methods\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\methods\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\methods\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\methods\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\on-finished\HISTORY.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\on-finished\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\on-finished\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\on-finished\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\on-finished\node_modules\ee-first\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\on-finished\node_modules\ee-first\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\on-finished\node_modules\ee-first\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\on-finished\node_modules\ee-first\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\on-finished\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\parseurl\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\parseurl\HISTORY.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\parseurl\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\parseurl\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\parseurl\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\parseurl\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\path-to-regexp\History.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\path-to-regexp\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\path-to-regexp\Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\path-to-regexp\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\path-to-regexp\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\proxy-addr\HISTORY.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\proxy-addr\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\proxy-addr\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\proxy-addr\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\proxy-addr\node_modules\forwarded\HISTORY.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\proxy-addr\node_modules\forwarded\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\proxy-addr\node_modules\forwarded\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\proxy-addr\node_modules\forwarded\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\proxy-addr\node_modules\forwarded\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\Cakefile" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\ipaddr.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\lib\ipaddr.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\src\ipaddr.coffee" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\test\ipaddr.test.coffee" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\proxy-addr\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\qs\.jshintignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\qs\.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\qs\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\qs\.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\qs\CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\qs\CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\qs\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\qs\Makefile" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\qs\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\qs\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\qs\lib\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\qs\lib\parse.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\qs\lib\stringify.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\qs\lib\utils.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\qs\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\qs\test\parse.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\qs\test\stringify.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\range-parser\HISTORY.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\range-parser\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\range-parser\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\range-parser\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\range-parser\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\HISTORY.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\.bin\mime" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\.bin\mime.cmd" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\destroy\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\destroy\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\destroy\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\http-errors\HISTORY.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\http-errors\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\http-errors\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\http-errors\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\http-errors\node_modules\inherits\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\http-errors\node_modules\inherits\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\http-errors\node_modules\inherits\inherits.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\http-errors\node_modules\inherits\inherits_browser.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\http-errors\node_modules\inherits\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\http-errors\node_modules\inherits\test.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\http-errors\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\mime\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\mime\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\mime\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\mime\build\build.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\mime\build\test.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\mime\cli.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\mime\mime.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\mime\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\mime\types.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\ms\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\ms\History.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\ms\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\ms\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\ms\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\ms\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\statuses\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\statuses\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\statuses\codes.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\statuses\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\node_modules\statuses\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\send\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\serve-static\HISTORY.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\serve-static\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\serve-static\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\serve-static\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\serve-static\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\type-is\HISTORY.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\type-is\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\type-is\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\type-is\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\type-is\node_modules\media-typer\HISTORY.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\type-is\node_modules\media-typer\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\type-is\node_modules\media-typer\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\type-is\node_modules\media-typer\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\type-is\node_modules\media-typer\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\type-is\node_modules\mime-types\HISTORY.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\type-is\node_modules\mime-types\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\type-is\node_modules\mime-types\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\type-is\node_modules\mime-types\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\type-is\node_modules\mime-types\node_modules\mime-db\HISTORY.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\type-is\node_modules\mime-types\node_modules\mime-db\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\type-is\node_modules\mime-types\node_modules\mime-db\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\type-is\node_modules\mime-types\node_modules\mime-db\db.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\type-is\node_modules\mime-types\node_modules\mime-db\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\type-is\node_modules\mime-types\node_modules\mime-db\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\type-is\node_modules\mime-types\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\type-is\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\utils-merge\.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\utils-merge\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\utils-merge\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\utils-merge\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\utils-merge\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\vary\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\vary\History.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\vary\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\vary\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\vary\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\node_modules\vary\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\node_modules\express\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\AngularJsProjects\todo\render.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AngularJsProjects.iws" />
@@ -359,6 +96,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -417,20 +155,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularJsProjects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="todo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -441,6 +165,40 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JsTestDriver-test-runner" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -449,6 +207,13 @@
       <option name="number" value="Default" />
       <updated>1434126935559</updated>
     </task>
+    <task id="LOCAL-00001" summary="Removed Express and extra .css files">
+      <created>1435708921903</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1435708921903</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -457,6 +222,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24954683" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -476,6 +242,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Removed Express and extra .css files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed Express and extra .css files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -648,6 +418,14 @@
             <marker date="1435708244527" expanded="true" signature="9412:9473" placeholder="..." />
             <marker date="1435708244527" expanded="true" signature="9565:9625" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
